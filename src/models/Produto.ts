@@ -1,4 +1,4 @@
-export class Produtos {
+export class Produto {
     private _id: number
     private _name: string
     private _price: number
@@ -36,5 +36,11 @@ export class Produtos {
         this.qtd = qtd
     }
 
-
+    public visualizar(): void {
+        console.log(`
+Id do Produto: ${this._id}
+Nome do produto: ${this._name}
+Preço do Produto: ${this._price.toFixed(2)}
+Quantidade em Estoque: ${this._qtd}`)
+    }
 }

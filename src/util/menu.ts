@@ -19,9 +19,9 @@ export class Menu {
 
 export function logo() {
     console.log(`${colors.fg.green}=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=${colors.reset}`)
-    console.log(`${colors.fg.green}    *      ${colors.fg.yellow} *      ${colors.fg.blue}* * * * * * * * * *    ${colors.fg.yellow}  *   ${colors.fg.green}     *    `)
-    console.log(`${colors.fg.green} *     * ${colors.fg.yellow}  *    ${colors.fg.blue}* ${colors.fg.white}BANCO DO BRAZIL COM Z${colors.fg.blue} *   ${colors.fg.yellow} *   ${colors.fg.green} *     * `)
-    console.log(`${colors.fg.green}    *      ${colors.fg.yellow} *      ${colors.fg.blue}* * * * * * * * * *    ${colors.fg.yellow}  *   ${colors.fg.green}     *    `)
+    console.log(`${colors.fg.green}    *    ${colors.fg.yellow} *        ${colors.fg.blue}* * * * * * * * * *    ${colors.fg.yellow}     *   ${colors.fg.green} *    `)
+    console.log(`${colors.fg.green}*  *   ${colors.fg.yellow}  *    ${colors.fg.blue}* ${colors.fg.white}Mercearia do Sr Sebastião${colors.fg.blue} *   ${colors.fg.yellow}  *   ${colors.fg.green} *  * `)
+    console.log(`${colors.fg.green}    *    ${colors.fg.yellow} *        ${colors.fg.blue}* * * * * * * * * *    ${colors.fg.yellow}     *   ${colors.fg.green} *    `)
     console.log(`${colors.fg.green}=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=${colors.reset}`)
 }
 export function descricaoMenu(texto: string): void {

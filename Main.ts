@@ -1,5 +1,4 @@
 // Importação das Bibliotecas
-import { Produtos } from "./src/models/Produtos";
 import read = require("readline-sync")
 import { descricaoMenu, Menu } from "./src/util/menu";
 import { sobre } from "./src/util/sobre";
