@@ -1,15 +1,16 @@
-export class Produto {
+export abstract class Produto {
     private _id: number
-    private _name: string
-    private _price: number
-    private _qtd: number
+    private _tipo: string
+    private _nome: string
+    private _preco: number
     //Método Costructor
-    constructor(id: number, name: string, price: number, qtd: number) {
+    constructor(id: number, tipo: string, nome: string, preco: number) {
         this._id = id
-        this._name = name
-        this._price = price
-        this._qtd = qtd
+        this._tipo = tipo
+        this._nome = nome
+        this._preco = preco
     }
+
     // Métodos GET e SET
     public get id(): number {
         return this._id
@@ -17,30 +18,31 @@ export class Produto {
     public set id(id: number) {
         this._id = id
     }
-    public get name(): string {
-        return this._name
+    public get tipo(): string {
+        return this._tipo
     }
-    public set name(name: string) {
-        this._name = name
+    public set tipo(tipo: string) {
+        this.tipo = tipo
     }
-    public get price(): number {
+    public get nome(): string {
+        return this._nome
+    }
+    public set nome(nome: string) {
+        this._nome = nome
+    }
+    public get preco(): number {
         return this._id
     }
-    public set price(price: number) {
-        this._price = price
+    public set preco(preco: number) {
+        this._preco = preco
     }
-    public get qtd(): number {
-        return this._qtd
-    }
-    public set qtd(qtd: number) {
-        this.qtd = qtd
-    }
+
 
     public visualizar(): void {
         console.log(`
-Id do Produto: ${this._id}
-Nome do produto: ${this._name}
-Preço do Produto: ${this._price.toFixed(2)}
-Quantidade em Estoque: ${this._qtd}`)
+Id: ${this._id}
+tipo: ${this.tipo}
+Nome: ${this.nome}
+Preço R$: ${this._preco.toFixed(2)}`)
     }
 }
